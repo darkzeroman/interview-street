@@ -1,10 +1,13 @@
 package com.vvohra.interviewstreet;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class TwosCompletionBetter {
-
+	/*
+	 * https://www.hackerrank.com/challenges/2s-complement
+	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line = br.readLine();

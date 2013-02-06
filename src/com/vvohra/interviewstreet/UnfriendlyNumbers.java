@@ -1,10 +1,14 @@
 package com.vvohra.interviewstreet;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Iterator;
 
+/*
+ * https://www.hackerrank.com/challenges/unfriendly-numbers
+ */
 public class UnfriendlyNumbers {
 
 	public static void main(String[] args) throws IOException {
@@ -48,8 +52,9 @@ public class UnfriendlyNumbers {
 				currentUpperLimit = upperLimit / i;
 				hs.add(i);
 
-				if (currentUpperLimit != i) // avoid "double counting" the square
-										// root
+				if (currentUpperLimit != i) // avoid "double counting" the
+											// square
+					// root
 					hs.add(currentUpperLimit);
 			}
 		}

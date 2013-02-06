@@ -7,6 +7,9 @@ import java.util.Comparator;
 import java.util.Hashtable;
 import java.util.PriorityQueue;
 
+/*
+ * https://www.hackerrank.com/challenges/median
+ */
 public class OnlineMedian {
 
 	static PriorityQueue<Long> minElems;

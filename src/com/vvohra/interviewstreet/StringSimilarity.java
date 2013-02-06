@@ -2,7 +2,9 @@ package com.vvohra.interviewstreet;
 
 import java.io.IOException;
 import java.util.Scanner;
-
+/*
+ * https://www.hackerrank.com/challenges/string-similarity
+ */
 public class StringSimilarity {
 
 	public static void main(String[] args) throws IOException {

@@ -3,6 +3,9 @@ package com.vvohra.interviewstreet;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/*
+ * https://www.hackerrank.com/challenges/string-reduction
+ */
 public class StringReduction {
 
 	public static void main(String args[]) throws Exception {

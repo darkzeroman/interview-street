@@ -1,7 +1,11 @@
 package com.vvohra.interviewstreet;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/flowers
+ */
 public class Flowers {
 
 	public static long minCost(long[] costs, int numFlowers, int numFriends) {
