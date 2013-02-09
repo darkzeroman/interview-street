@@ -1,4 +1,4 @@
-interview-street
+Interview-Street
 ================
 
 Interview Street is like a TopCoder alternative and these are the solutions for the puzzles I have done.
