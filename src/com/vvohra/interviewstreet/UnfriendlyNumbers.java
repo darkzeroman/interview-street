@@ -52,9 +52,8 @@ public class UnfriendlyNumbers {
 				currentUpperLimit = upperLimit / i;
 				hs.add(i);
 
-				if (currentUpperLimit != i) // avoid "double counting" the
-											// square
-					// root
+				if (currentUpperLimit != i)
+					// avoid "double counting" the square root
 					hs.add(currentUpperLimit);
 			}
 		}

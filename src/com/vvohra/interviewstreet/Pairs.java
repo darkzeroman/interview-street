@@ -5,6 +5,9 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashSet;
 
+/*
+ * https://www.hackerrank.com/challenges/pairs
+ */
 public class Pairs {
 
 	public static void main(String args[]) throws Exception {
@@ -17,7 +20,6 @@ public class Pairs {
 		int[] inputs = new int[N];
 		for (int i = 0; i < N; i++)
 			inputs[i] = Integer.parseInt(inputs_str[i]);
-		// System.out.println(Arrays.toString(inputs));
 		run(inputs, K);
 	}
 

@@ -1,9 +1,15 @@
 package com.vvohra.interviewstreet;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/*
+ * NOT CORRECT
+ * https://www.hackerrank.com/challenges/save-humanity
+ * 
+ */
 public class SavingHumanity {
 
 	public static void main(String[] args) throws IOException {

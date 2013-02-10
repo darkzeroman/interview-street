@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.util.BitSet;
 
+/*
+ * NOT CORRECT
+ * https://www.hackerrank.com/challenges/changing-bits
+ */
 public class ChangingBit {
 
 	static BitSet a;

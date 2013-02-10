@@ -9,6 +9,10 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.TreeSet;
 
+/*
+ * NOT CORRECT
+ * https://www.hackerrank.com/challenges/meeting-point
+ */
 public class MeetingPoint {
 	public static void main(String args[]) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

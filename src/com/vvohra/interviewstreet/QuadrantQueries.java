@@ -1,7 +1,12 @@
 package com.vvohra.interviewstreet;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/*
+ * NOT CORRECT
+ * https://www.hackerrank.com/challenges/quadrant-queries
+ */
 public class QuadrantQueries {
 	static boolean[] numChangesX;
 	static boolean[] numChangesY;
@@ -84,7 +89,6 @@ public class QuadrantQueries {
 				fourthQ++;
 
 		}
-		System.out.println(String.format("%d %d %d %d", firstQ, secondQ,
-				thirdQ, fourthQ));
+		System.out.println(String.format("%d %d %d %d", firstQ, secondQ, thirdQ, fourthQ));
 	}
 }

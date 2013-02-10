@@ -11,7 +11,6 @@ public class BillBoards {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// maxRevenue(new int[] { 0, 1, 2, 8, 10 },
 		// new int[] { 0, 10, 15, 50, 20 });
 		maxRevenue(new long[] { 1, 2, 3, 1, 6, 10 }, 2);

@@ -8,6 +8,10 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.TreeSet;
 
+/*
+ * NOT CORRECT
+ * https://www.hackerrank.com/challenges/fraud-prevention
+ */
 public class FraudPrevention {
 	public static void main(String args[]) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -41,10 +45,8 @@ public class FraudPrevention {
 		System.out.println(sb.toString());
 	}
 
-	public static void checkCases(Hashtable<String, ArrayList<Record>> hs,
-			TreeSet<Integer> pq) {
-		Iterator<Entry<String, ArrayList<Record>>> iter = hs.entrySet()
-				.iterator();
+	public static void checkCases(Hashtable<String, ArrayList<Record>> hs, TreeSet<Integer> pq) {
+		Iterator<Entry<String, ArrayList<Record>>> iter = hs.entrySet().iterator();
 		while (iter.hasNext()) {
 			Entry<String, ArrayList<Record>> entry = iter.next();
 			if (entry.getValue().size() == 1)
@@ -57,12 +59,10 @@ public class FraudPrevention {
 				addOrInitializeRecord(record, record.credit_card, smaller_hs);
 			}
 
-			Iterator<Entry<String, ArrayList<Record>>> smallerHSIterator = smaller_hs
-					.entrySet().iterator();
+			Iterator<Entry<String, ArrayList<Record>>> smallerHSIterator = smaller_hs.entrySet().iterator();
 
 			while (smallerHSIterator.hasNext()) {
-				Entry<String, ArrayList<Record>> smaller_hs_entry = smallerHSIterator
-						.next();
+				Entry<String, ArrayList<Record>> smaller_hs_entry = smallerHSIterator.next();
 				if (smaller_hs_entry.getValue().size() > 1)
 					continue;
 				for (Record record : entry.getValue())
@@ -72,8 +72,7 @@ public class FraudPrevention {
 		}
 	}
 
-	public static void addOrInitializeRecord(Record record, String key,
-			Hashtable<String, ArrayList<Record>> hs) {
+	public static void addOrInitializeRecord(Record record, String key, Hashtable<String, ArrayList<Record>> hs) {
 		if (hs.get(key) == null)
 			hs.put(key, new ArrayList<Record>());
 		hs.get(key).add(record);
@@ -82,9 +81,8 @@ public class FraudPrevention {
 }
 
 class Record {
-	public void setRecord(int order_id, int deal_id, String email,
-			String address, String city, String state, String zip_code,
-			String credit_card) {
+	public void setRecord(int order_id, int deal_id, String email, String address, String city, String state,
+			String zip_code, String credit_card) {
 
 		this.order_id = order_id;
 		this.deal_id = deal_id;
@@ -100,10 +98,9 @@ class Record {
 
 	public Record(String input) {
 		String[] str = input.split(",");
-		setRecord(Integer.parseInt(str[0]), Integer.parseInt(str[1]),
-				formatEmail(str[2]), expandAddressAbbr(str[3]), str[4]
-						.toUpperCase().trim(), expandStateAbbr(str[5]), str[6]
-						.toUpperCase().trim(), str[7].toUpperCase().trim());
+		setRecord(Integer.parseInt(str[0]), Integer.parseInt(str[1]), formatEmail(str[2]), expandAddressAbbr(str[3]),
+				str[4].toUpperCase().trim(), expandStateAbbr(str[5]), str[6].toUpperCase().trim(), str[7].toUpperCase()
+						.trim());
 	}
 
 	int order_id, deal_id;
@@ -115,15 +112,14 @@ class Record {
 	}
 
 	public static String expandStateAbbr(String str) {
-		return str.toUpperCase().trim().replace("IL", "ILLINOIS").replace("CA", "CALIFORNIA")
-				.replace("NY", "NEW YORK").toUpperCase().trim();
+		return str.toUpperCase().trim().replace("IL", "ILLINOIS").replace("CA", "CALIFORNIA").replace("NY", "NEW YORK")
+				.toUpperCase().trim();
 
 	}
 
 	public static String formatEmail(String str) {
-		
-		str = str.replace(".", "").replaceFirst("\\+.*@", "@").toUpperCase()
-				.trim();
+
+		str = str.replace(".", "").replaceFirst("\\+.*@", "@").toUpperCase().trim();
 		return str;
 
 	}

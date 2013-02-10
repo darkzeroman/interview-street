@@ -1,10 +1,15 @@
 package com.vvohra.interviewstreet;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Hashtable;
 
+/*
+ * NOT WORKING
+ * https://www.hackerrank.com/challenges/lucky-numbers
+ */
 public class LuckyNumbers {
 	Hashtable<Integer, Integer> ht = new Hashtable<>();
 
@@ -17,8 +22,7 @@ public class LuckyNumbers {
 		int T = Integer.parseInt(line);
 		for (int i = 0; i < T; i++) {
 			String[] inputs_str = br.readLine().split(" ");
-			luckyNumbers(Long.parseLong(inputs_str[0]),
-					Long.parseLong(inputs_str[1]));
+			luckyNumbers(Long.parseLong(inputs_str[0]), Long.parseLong(inputs_str[1]));
 		}
 	}
 
